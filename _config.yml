@@ -3,8 +3,7 @@ remote_theme: "jekyll/minima@1e8a445"
 plugins:
  - jekyll-remote-theme
 # Repository Metadata
-title: "Maven Pixar Challenge: Analyzing Pixar's Legacy Through Data"
-description: "An interactive Power BI analysis exploring Pixar's financial performance, audience engagement, and storytelling patterns. This project uncovers insights into the factors behind Pixar's biggest hits, box office success, and critical reception over the past 30 years."
+description: "https://www.linkedin.com/in/jagabrahan/"
 author: "Jan Aeron Abrahan"
 github_username: "aeronabrahan"
 # Navigation Settings
