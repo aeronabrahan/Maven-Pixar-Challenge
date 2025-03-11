@@ -1,7 +1,3 @@
-# Maven Pixar Challenge: Analyzing Pixar's Legacy Through Data
-
----
-
 ## Project Overview
 This project explores Pixar's cinematic legacy by analyzing key financial, critical, and audience-based metrics. By leveraging interactive visualizations in Power BI, this dashboard provides insights into Pixar’s box office success, storytelling patterns, and critical reception over the past 30 years. 
 
