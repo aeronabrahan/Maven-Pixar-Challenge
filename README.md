@@ -33,10 +33,10 @@ This project explores Pixar's cinematic legacy by analyzing key financial, criti
 
 ## Problem Statement
 Pixar has produced some of the most iconic animated films, but not all Pixar movies achieve both critical and commercial success. This project aims to answer key questions:
-- Which Pixar films generated the highest box office revenue?
-- How do critic and audience scores correlate with financial performance?
-- What storytelling patterns contribute to Pixar's biggest hits?
-- Which directors have the best track record based on audience reception and revenue?
+- Which Pixar films generated the highest box office revenue?  
+- How do critic and audience scores correlate with financial performance?  
+- What storytelling patterns contribute to Pixar's biggest hits?  
+- Which directors have the best track record based on audience reception and revenue?  
 
 A data-driven approach is required to identify patterns behind Pixar’s biggest successes and rare misses.
 
@@ -51,16 +51,16 @@ A data-driven approach is required to identify patterns behind Pixar’s biggest
 - Analyze the financial impact of sequels vs. original films.  
 
 ### Challenges
-- Some critically acclaimed films did not perform well financially (WALL-E, Ratatouille).
-- Some high-revenue films received mixed audience reception (Cars 2, Lightyear).
-- Audience and critic scores often disagree—which metric is a better predictor of success?
+- Some critically acclaimed films did not perform well financially (WALL-E, Ratatouille).  
+- Some high-revenue films received mixed audience reception (Cars 2, Lightyear).  
+- Audience and critic scores often disagree—which metric is a better predictor of success?  
 
 ### Ideal Solution
 A Power BI dashboard that provides:
-- Box office revenue trends across Pixar’s entire film catalog.
-- Correlation analysis between critic/audience scores and financial success.
-- A storytelling framework that defines Pixar’s winning formula.
-- Best-performing Pixar directors based on revenue and audience ratings.
+- Box office revenue trends across Pixar’s entire film catalog.  
+- Correlation analysis between critic/audience scores and financial success.  
+- A storytelling framework that defines Pixar’s winning formula.  
+- Best-performing Pixar directors based on revenue and audience ratings.  
 
 ---
 
@@ -72,33 +72,33 @@ A Power BI dashboard that provides:
 ---
 
 ## Data Source
-- Pixar Film Data (1995-2024): Includes financial performance, audience scores, and critic reviews.
-- Pixar People Dataset: Director information linked to each film.
-- Box Office & Ratings Data: Includes worldwide revenue, IMDb, Rotten Tomatoes, and Metacritic scores.
-- Academy Awards Data: Tracks Pixar’s Oscar nominations and wins.
+- Pixar Film Data (1995-2024): Includes financial performance, audience scores, and critic reviews.  
+- Pixar People Dataset: Director information linked to each film.  
+- Box Office & Ratings Data: Includes worldwide revenue, IMDb, Rotten Tomatoes, and Metacritic scores.  
+- Academy Awards Data: Tracks Pixar’s Oscar nominations and wins.  
 
 ---
 
 ## Dashboard Design
 
 ### Film Overview
-- Provides basic film details, including release date, genre, runtime, and key creators.
-- Displays box office revenue, critic scores, and audience ratings for each film.
+- Provides basic film details, including release date, genre, runtime, and key creators.  
+- Displays box office revenue, critic scores, and audience ratings for each film.  
 
 ### Film Performance & Audience Impact
-- Compares box office revenue with audience scores to determine which films were commercially and critically successful.
-- ROI Analysis of each film’s profitability.
-- Critic vs. Audience Ratings: Identifies discrepancies between critic and public reception.
+- Compares box office revenue with audience scores to determine which films were commercially and critically successful.  
+- ROI Analysis of each film’s profitability.  
+- Critic vs. Audience Ratings: Identifies discrepancies between critic and public reception.  
 
 ### Pixar’s Greatest Hits & Storytelling
-- Top-Grossing Pixar Films: Ranked by worldwide revenue.
-- Best Pixar Directors: Ranked by average audience ratings and revenue.
-- The Evolution of Pixar’s Legacy: Tracks box office trends over time.
+- Top-Grossing Pixar Films: Ranked by worldwide revenue.  
+- Best Pixar Directors: Ranked by average audience ratings and revenue.  
+- The Evolution of Pixar’s Legacy: Tracks box office trends over time.  
 
 ### The Pixar Formula
-- Heatmap Analysis: Identifies storytelling elements shared by Pixar’s most successful films.
-- Quadrant Analysis: Classifies Pixar films into four categories based on box office performance and audience approval.
-- Box Office vs. Budget Comparison: Evaluates the financial efficiency of Pixar films.
+- Heatmap Analysis: Identifies storytelling elements shared by Pixar’s most successful films.  
+- Quadrant Analysis: Classifies Pixar films into four categories based on box office performance and audience approval.  
+- Box Office vs. Budget Comparison: Evaluates the financial efficiency of Pixar films.  
 
 ---
 
@@ -115,11 +115,11 @@ A Power BI dashboard that provides:
 
 ## Development Process
 
-1. Extract and clean data from multiple sources.
-2. Merge and transform datasets to align financial and critical metrics.
-3. Develop DAX measures to calculate performance indicators.
-4. Build and format Power BI visuals for storytelling insights.
-5. Ensure interactivity and drill-through functionality for deeper analysis.
+1. Extract and clean data from multiple sources.  
+2. Merge and transform datasets to align financial and critical metrics.  
+3. Develop DAX measures to calculate performance indicators.  
+4. Build and format Power BI visuals for storytelling insights.  
+5. Ensure interactivity and drill-through functionality for deeper analysis.  
 
 ---
 
@@ -127,6 +127,7 @@ A Power BI dashboard that provides:
 
 ### logos.py
 - For creating the pixar_logos.csv
+  
 ```python
 import pandas as pd
 import urllib.parse  # For URL encoding
@@ -159,10 +160,11 @@ df_logos.to_csv(csv_file_path, index=False, encoding="utf-8")
 
 print(f"Pixar Logos CSV Saved at: {csv_file_path}")
 print(df_logos.head())  # Display sample output
-```
-
+```  
+  
 ### pixar.py
-- For scraping the posters and saving as csv
+- For scraping the posters and saving as csv  
+  
 ```python
 # Updated script to fetch only Pixar movie posters from Wikipedia
 
@@ -233,8 +235,10 @@ df_pixar = pd.DataFrame(pixar_films)
 csv_file_path = r"C:\Users\Aeron\Desktop\Aeron\0 Work\_Data Projects\Maven Analytics Challenge\Maven Pixar Challenge\datasets\pixar_posters.csv"
 df_pixar.to_csv(csv_file_path, index=False)
 ```
+  
 ### dataprep.py
 - For combining all dataset into pixarfilms.csv
+  
 ```python
 import pandas as pd
 import os
@@ -351,22 +355,22 @@ print(f"\nData Cleaning & Merging Completed! File saved as: {output_path}")
 # Display the first few rows of the cleaned dataset
 print("\n🎬 Sample of Cleaned Data:")
 print(merged_df.head())
-```
+```  
 
 ---
 
 ## Analysis & Insights
 
 ### Key Insights
-- Sequels generate revenue but do not always score well with audiences (e.g., Cars 2, Lightyear).
-- Critic scores do not always predict box office success (Ratatouille, WALL-E).
-- Pixar’s highest-grossing films often balance strong storytelling with emotional depth (Toy Story 3, Inside Out).
-- The best Pixar directors have consistent audience approval and strong box office revenue.
+- Sequels generate revenue but do not always score well with audiences (e.g., Cars 2, Lightyear).  
+- Critic scores do not always predict box office success (Ratatouille, WALL-E).  
+- Pixar’s highest-grossing films often balance strong storytelling with emotional depth (Toy Story 3, Inside Out).  
+- The best Pixar directors have consistent audience approval and strong box office revenue.  
 
 ### Recommendations
-- Focus on original storytelling concepts rather than relying on sequels for box office success.
-- Leverage audience engagement metrics to refine marketing strategies for future releases.
-- Maintain Pixar’s core storytelling formula while innovating in new genres.
+- Focus on original storytelling concepts rather than relying on sequels for box office success.  
+- Leverage audience engagement metrics to refine marketing strategies for future releases.  
+- Maintain Pixar’s core storytelling formula while innovating in new genres.  
 
 ---
 
