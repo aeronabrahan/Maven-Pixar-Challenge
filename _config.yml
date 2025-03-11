@@ -13,16 +13,11 @@ include:
  - assets/datasets
  - assets/images
  - assets/pbi
-# Repository Settings
-repository: "aeronabrahan/Maven-Pixar-Challenge
-"
-url: "https://github.com/aeronabrahan/Maven-Pixar-Challenge"
+
 # SEO and Social Sharing
 social:
  name: "Jan Aeron Abrahan"
  links:
    - "https://github.com/aeronabrahan"
    - "https://linkedin.com/in/jagabrahan"
-# Custom Options
-markdown: kramdown
-permalink: pretty
+
