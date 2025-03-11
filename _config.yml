@@ -1,9 +1,10 @@
 # Theme and Plugins
-remote_theme: "jekyll/minima@1e8a445"
+remote_theme: pages-themes/midnight@v0.2.0
 plugins:
  - jekyll-remote-theme
 # Repository Metadata
-description: "https://www.linkedin.com/in/jagabrahan/"
+title: "Maven Pixar Challenge – Uncovering the Patterns Behind Pixar’s Greatest Hits"
+description: "This analysis delves into key financial, critical, and audience metrics to uncover the secrets behind Pixar’s box office successes and storytelling patterns over the past 30 years. Utilizing interactive visualizations in Power BI, this dashboard offers insights into the correlation between critical reception and financial performance, highlights Pixar’s greatest hits, and examines the storytelling elements that contribute to their iconic films."
 author: "Jan Aeron Abrahan"
 github_username: "aeronabrahan"
 # Navigation Settings
@@ -13,11 +14,15 @@ include:
  - assets/datasets
  - assets/images
  - assets/pbi
-
+# Repository Settings
+repository: "aeronabrahan/Maven-Pixar-Challenge"
+url: "https://github.com/aeronabrahan/Maven-Pixar-Challenge"
 # SEO and Social Sharing
 social:
  name: "Jan Aeron Abrahan"
  links:
    - "https://github.com/aeronabrahan"
    - "https://linkedin.com/in/jagabrahan"
-
+# Custom Options
+markdown: kramdown
+permalink: pretty
